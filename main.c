@@ -31,12 +31,8 @@ int main(int ac, char **av)
 
 			if (strcmp(cmd[0], "exit") == 0)
 			{
-				if (cmd[1] != NULL)
-				{
-					exit_status = atoi(cmd[1]);
-				}
-				free_command(cmd);
-				exit(exit_status);
+    				free_command(cmd);
+   				break;
 			}
 			if (strcmp(cmd[0], "env") == 0)
 			{
